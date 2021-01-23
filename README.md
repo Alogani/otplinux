@@ -1,7 +1,8 @@
-# OTP for linux
+# _![Logo](/Logo_small.png)_ OTP for linux
 
 OTP for linux is an open-source desktop client to manage your one-time passwords (OTP).
 
+![Screenshot](/Screenshot.png)
 
 ## How one-time passwords works ?
 
