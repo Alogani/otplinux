@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OTP for linux
+Comment=One-time password app
+Exec=/usr/bin/otplinux
+Icon=/usr/share/otplinux/otplinux.png
+Terminal=false
+Type=Application
+Categories=Utility
+StartupNotify=true

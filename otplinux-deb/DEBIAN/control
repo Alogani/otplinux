@@ -1,0 +1,13 @@
+Package: otplinux
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Alogani <alogani@mailfence.com>
+Description: OTP for linux is an open-source graphical client to manage and generate one-time passwords.
+ * Improves logging security by providing a second unique and changing password
+ * Handles Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP)
+ * Generate QRCodes that can be scanned on with an android or ios OTP application.
+ * Import QRCodes
+Depends: openjdk-11-jre
+Installed-Size: 14886
