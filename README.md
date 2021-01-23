@@ -36,6 +36,12 @@ If you are on a debian system (like ubuntu or linux mint) :
     * a GUI tool like gdebi
     * the command-line `sudo apt install path_to_deb_file.deb`
 
+
+On an other linux system :
+1. Install openjdk-11-jre if you don't already have on your system
+2. Download the [jar file](https://github.com/Alogani/otplinux/releases) (under Assets)
+3. Run it with the command `java -jar path_to_jar_file.jar`
+
 ## Why did you made this application ?
 
 I use two-factor authentification when I login to websites in which security seems critically important for me, like my mail account or my Paypal account. I already use the very good and open-source freeotp-android on my phone (I have absolutly no link with this project).
