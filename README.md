@@ -38,9 +38,9 @@ If you are on a debian system (like ubuntu or linux mint) :
 
 
 On another linux system, you can run it by :
-1. Installing openjdk-11-jre if you don't already have on your system
-2. Downloading the [jar file](https://github.com/Alogani/otplinux/releases) (under Assets)
-3. Running the program with the command `java -jar path_to_jar_file.jar`
+1. Downloading the [jar file](https://github.com/Alogani/otplinux/releases) (under Assets)
+2. Running the program with the command `java -jar path_to_jar_file.jar`
+You will need a java 11 runtime (like openjdk-11-jre)
 
 ## Why did you made this application ?
 
