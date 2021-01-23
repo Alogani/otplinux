@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.alogani.otplinux.scenes.Parameters" prefHeight="400.0" prefWidth="600.0">
+    <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Tab text="General">
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <GridPane hgap="40.0" vgap="10.0">
+                    <padding><Insets bottom="100.0" left="80.0" right="80.0" top="60.0" /></padding>
+                        <Label text="ID separator" GridPane.halignment="LEFT" />
+                        <Label text="Show password by default" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                        <Label text="Show secret by default" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+                        <Label text="Show token details by default" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="separator" prefWidth="100.0" promptText="Newline" GridPane.columnIndex="1" />
+                        <CheckBox fx:id="showPasswordCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <CheckBox fx:id="showSecretCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <CheckBox fx:id="showDetailsButton" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                </GridPane>
+                <Separator/>
+                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <padding><Insets right="60.0" bottom="15.0" /></padding>
+                        <Button onAction="#applyParameters" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="OK" />
+                        <Button onAction="#closeStage" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="Cancel" />
+                </HBox>
+            </VBox>
+        </Tab>
+    </TabPane>
+</AnchorPane>

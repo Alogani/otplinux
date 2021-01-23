@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+
+
+<AnchorPane prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alogani.otplinux.scenes.Primary">
+    <fx:define>
+        <Image fx:id="chevronUp" url="icons/chevronUp.png"/>
+        <Image fx:id="chevronDown" url="icons/chevronDown.png"/>
+        <Image fx:id="chevronUpDouble" url="icons/chevronUpDouble.png"/>
+        <Image fx:id="chevronDownDouble" url="icons/chevronDownDouble.png"/>
+        <Image fx:id="cross" url="icons/cross.png"/>
+    </fx:define>
+      <BorderPane AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox spacing="20.0" BorderPane.alignment="CENTER" alignment="CENTER" style="-fx-background-color: #336699">
+                <padding><Insets bottom="10.0" left="20.0" right="20.0" top="10.0" /></padding>
+                <Button text="New" onAction="#newToken" prefWidth="150.0"/>
+                <Button text="Modify" onAction="#modifyToken" prefWidth="150.0"/>
+                <Button text="Delete" onAction="#deleteToken" prefWidth="150.0"/>
+                <Button text="Parameters" onAction="#openParameters" prefWidth="150.0"/>
+            </HBox>
+         </top>
+          <left>
+              <VBox spacing="8">
+                  <padding><Insets top="15.0" left="20.0"/></padding>
+                  <ListView fx:id="tokenList" >
+                  </ListView>
+                  <HBox spacing="8">
+                      <Button onAction="#moveOnListUp"><graphic><ImageView image="$chevronUp"/></graphic></Button>
+                      <Button onAction="#moveOnListDown"><graphic><ImageView image="$chevronDown"/></graphic></Button>
+                      <Button onAction="#moveOnListTop"><graphic><ImageView image="$chevronUpDouble"/></graphic></Button>
+                      <Button onAction="#moveOnListBottom"><graphic><ImageView image="$chevronDownDouble"/></graphic></Button>
+                  </HBox>
+              </VBox>
+          </left>
+          <center>
+              <VBox spacing="20.0" alignment="TOP_CENTER">
+                  <padding><Insets top="20.0" left="40.0" right="20.0"/> </padding>
+                  <GridPane hgap="50.0" vgap="20.0">
+                      <columnConstraints><ColumnConstraints /><ColumnConstraints hgrow="ALWAYS" /><ColumnConstraints/></columnConstraints>
+                      <Label text="Issuer" GridPane.columnIndex="0" GridPane.rowIndex="0"  />
+                      <Label text="Account" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                      <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+                      <Label fx:id="issuer" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                      <Label fx:id="account" GridPane.columnIndex="1" GridPane.rowIndex="1"  />
+                      <Label fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="2"  />
+
+                      <VBox spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="4" GridPane.vgrow="ALWAYS" alignment="BOTTOM_CENTER">
+                          <GridPane.margin><Insets bottom="15.0"/></GridPane.margin>
+                          <Button fx:id="togglePasswordButton" onAction="#togglePassword" prefWidth="38.0" prefHeight="30.0"/>
+                      </VBox>
+                  </GridPane>
+                  <HBox spacing="20.0">
+                      <padding><Insets top="-10.0"/></padding>
+                      <Button text="Show details" onAction="#showTokenDetails" prefWidth="200.0"/>
+                      <Button text="Generate QR Code" onAction="#generateQRCode" prefWidth="200.0"/>
+                  </HBox>
+                  <GridPane fx:id="tokenDetailsGrid" visible="false" hgap="50.0" vgap="20.0">
+                      <columnConstraints><ColumnConstraints /><ColumnConstraints hgrow="ALWAYS"/><ColumnConstraints/></columnConstraints>
+                      <Label text="Type" GridPane.columnIndex="0" GridPane.rowIndex="0"  />
+                      <Label text="Algorithm" GridPane.columnIndex="0" GridPane.rowIndex="1"  />
+                      <Label text="Digits" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                      <Label text="Secret" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                      <Label fx:id="intervalOrcounterLabel" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+                      <Label fx:id="type" GridPane.columnIndex="1" GridPane.rowIndex="0"  />
+                      <Label fx:id="algorithm" GridPane.columnIndex="1" GridPane.rowIndex="1"  />
+                      <Label fx:id="digits" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      <Label fx:id="secret" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                      <Label fx:id="intervalOrcounter" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                      <VBox spacing="8.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="5" GridPane.vgrow="ALWAYS" alignment="BOTTOM_CENTER">
+                          <GridPane.margin><Insets bottom="10.0"/></GridPane.margin>
+                          <Button fx:id="toggleSecretButton"  onAction="#toggleSecret" prefWidth="38.0" prefHeight="30.0"/>
+                          <Button fx:id="incrementCounter" onAction="#incrementCounter" visible="false" prefWidth="38.0" prefHeight="30.0"><graphic><ImageView image="$cross"/></graphic></Button>
+                      </VBox>
+                  </GridPane>
+              </VBox>
+          </center>
+      </BorderPane>
+</AnchorPane>

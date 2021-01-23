@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alogani.otplinux.scenes.ModifyToken">
+    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" alignment="TOP_CENTER" fillWidth="false" spacing="20">
+        <GridPane hgap="10.0" vgap="12.0">
+            <padding><Insets left="50.0"/></padding>
+            <Label text="Issuer" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Account" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label text="Secret" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label text="Type" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label text="Algorithm  " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label text="Digits" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label fx:id="intervalOrcounterLabel" text="Interval" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label fx:id="passwordLabel" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+
+            <TextField fx:id="issuer" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField fx:id="account" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="secretObfuscated" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="secretClear" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <ComboBox fx:id="type" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="RIGHT" prefWidth="180.0"/>
+            <ComboBox fx:id="algorithm" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.halignment="RIGHT" prefWidth="180.0"/>
+            <TextField fx:id="digits" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="RIGHT" prefWidth="180.0"/>
+            <TextField fx:id="intervalOrcounter" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+            <Label fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+            <Button fx:id="toggleSecretButton" onAction="#toggleSecret" GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="38.0" prefHeight="30.0"/>
+
+        </GridPane>
+        <HBox prefWidth="280.0" alignment="CENTER_RIGHT" spacing="8.0">
+            <Button text="Import QR Code" fx:id="qrCode" onAction="#importQRCodeButton" />
+            <Pane prefWidth="30.0"/>
+            <Button text="Ok" onAction="#createTokenButton" />
+            <Button text="Cancel" onAction="#cancelButton" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>
