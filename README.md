@@ -37,10 +37,10 @@ If you are on a debian system (like ubuntu or linux mint) :
     * the command-line `sudo apt install path_to_deb_file.deb`
 
 
-On an other linux system :
-1. Install openjdk-11-jre if you don't already have on your system
-2. Download the [jar file](https://github.com/Alogani/otplinux/releases) (under Assets)
-3. Run it with the command `java -jar path_to_jar_file.jar`
+On another linux system, you can run it by :
+1. Installing openjdk-11-jre if you don't already have on your system
+2. Downloading the [jar file](https://github.com/Alogani/otplinux/releases) (under Assets)
+3. Running the program with the command `java -jar path_to_jar_file.jar`
 
 ## Why did you made this application ?
 
