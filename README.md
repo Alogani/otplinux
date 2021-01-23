@@ -27,6 +27,14 @@ With this application, you will be able to :
  * Handle Time-based One-Time Password (TOTP) and HMAC-based One-Time Password (HOTP)
  * Generate QRCodes that can be scanned on with an android or ios OTP application.
  * Import QRCodes
+ 
+## How to install it ?
+
+If you are on a debian system (like ubuntu or linux mint) :
+1. Download the last [deb package](https://github.com/Alogani/otplinux/releases) (under Assets)
+2. Install it via
+    * a GUI tool like gdebi
+    * the command-line `sudo apt install path_to_deb_file.deb`
 
 ## Why did you made this application ?
 
