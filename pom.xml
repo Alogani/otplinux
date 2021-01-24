@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.alogani.otplinux</groupId>
-    <artifactId>com.alogani.otp</artifactId>
+    <groupId>com.alogani</groupId>
+    <artifactId>otplinux</artifactId>
     <version>1.0.0</version>
     <build>
         <plugins>
@@ -63,6 +63,11 @@
             <artifactId>javafx-swing</artifactId>
             <version>11.0.1</version>
             <classifier>linux</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.alogani</groupId>
+            <artifactId>otp-core</artifactId>
+            <version>0.1.0-alpha</version>
         </dependency>
         <dependency>
             <groupId>net.harawata</groupId>
