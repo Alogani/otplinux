@@ -59,4 +59,4 @@ If this application is used and appreciated, the following improvements may be i
 * The possibility to encrypt the datafiles where the token are stored
 * More constraints on the allowed token parameters to comply to standards (RFC4226 and RFC6238 memos)
 * Provide eventually MD5 support (although it is less secure)
-* A Windows executable
+* For v2, a windows and a mac installer
