@@ -1,3 +1,22 @@
+/*
+ * OTP for linux
+ * Copyright (C) 2021 Alogani
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA  02110-1335, USA.
+ */
+
 package com.alogani.otplinux;
 
 import com.alogani.otpcore.HashFunction;
@@ -24,7 +43,7 @@ This class handles all the I/O between data objects that are saved on disk and t
 It stores after import the necessary data in fields for the other class to use
  */
 public class Storage {
-    final public static Path DATADIR_PATH = Path.of(AppDirsFactory.getInstance().getUserDataDir("totplinux", null, "com.alogani"));
+    final public static Path DATADIR_PATH = Path.of(AppDirsFactory.getInstance().getUserDataDir("otplinux", null, "com.alogani"));
 
     private static boolean parametersOutOfSync = false;
 
@@ -68,7 +87,8 @@ public class Storage {
             allParametersLines = Files.readAllLines(DATADIR_PATH.resolve("parameters"), StandardCharsets.UTF_8);
             // RECUPERATE ORDERED LIST
             for (String id : allParametersLines.get(0).split("\\t"))
-                tokenIdList.add(Long.parseLong(id));
+                if (tokenMap.keySet().contains(id))
+                    tokenIdList.add(Long.parseLong(id)); // only add entry corresponding to a token
 
             // If a tokenID in tokenMap doesn't exist in tokenIDList then add it
             for (Long tokenId : tokenMap.keySet())
