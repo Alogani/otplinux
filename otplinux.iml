@@ -7,18 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/ressources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Miscellaneous" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:11.0.2" level="project" />
@@ -29,19 +21,17 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:linux:11.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alogani:otplinux-core:0.1.0-alpha" level="project" />
+    <orderEntry type="library" name="Maven: com.google.zxing:core:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.zxing:javase:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.beust:jcommander:1.78" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.github.jai-imageio:jai-imageio-core:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-net:commons-net:3.7.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
     <orderEntry type="library" name="Maven: net.harawata:appdirs:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna-platform:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.5.6" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../totplinux-core/out/artifacts/totplinux_core_jar/totplinux-core.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
