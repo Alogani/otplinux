@@ -1,0 +1,19 @@
+OTPLINUX
+Copyright (C) 2021 Alogani
+Licence : GPL-3.0
+
+OTPLINUX-CORE
+Copyright (c) 2021 Alogani
+Licence : MIT License
+
+APPDIRS
+Copyright (c) com.harawata
+License: Apache-2.0
+
+MAVEN PLUGINS
+Copyright 2002-2009 The Apache Software Foundation
+License: Apache-2.0
+
+SLF4J
+Copyright (c) 2004-2017 QOS.ch
+Licence : MIT License
