@@ -49,7 +49,7 @@ _You will need a java 11 runtime (like openjdk-11-jre)_
 I use two-factor authentification when I login to websites in which security seems critically important for me, like my mail account or my Paypal account. I already use the very good and open-source freeotp-android on my phone (I have absolutly no link with this project).
 But when my phone will die and if I haven't made proper backups, all my info will be lost, and I might probably lose for good my access to my mail account.
 
-I've found no OTP GUI application for linux and because I've been really wanting to create my first own program and learn the Java language (as I want to make career as a developper), I decided to create it. And I really hope this application will be useful for you.
+I've found no OTP GUI application for linux and because I've been really wanting to create my first own program and learn the Java language, I decided to create it. And I really hope this application will be useful for you.
 
 
 ## Coming features
