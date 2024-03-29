@@ -50,13 +50,3 @@ I use two-factor authentification when I login to websites in which security see
 But when my phone will die and if I haven't made proper backups, all my info will be lost, and I might probably lose for good my access to my mail account.
 
 I've found no OTP GUI application for linux and because I've been really wanting to create my first own program and learn the Java language, I decided to create it. And I really hope this application will be useful for you.
-
-
-## Coming features
-
-If this application is used and appreciated, the following improvements may be implemented :
-* French and german language
-* The possibility to encrypt the datafiles where the token are stored
-* More constraints on the allowed token parameters to comply to standards (RFC4226 and RFC6238 memos)
-* Provide eventually MD5 support (although it is less secure)
-* For v2, a windows and a mac installer
